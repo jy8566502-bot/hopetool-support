@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hopetool Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'DM Sans',sans-serif;background:#f0f2f5;color:#1a1a2e;min-height:100vh;display:flex;justify-content:center;padding:16px}
+  .card{background:#fff;max-width:420px;width:100%;border-radius:24px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.08);animation:slideUp .5s ease-out}
+  @keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .header{background:linear-gradient(135deg,#0d1b3e,#1a3a6e);padding:40px 28px 32px;text-align:center;position:relative;overflow:hidden}
+  .header::before{content:'';position:absolute;top:-40px;right:-40px;width:120px;height:120px;background:rgba(255,255,255,.05);border-radius:50%}
+  .header::after{content:'';position:absolute;bottom:-20px;left:-20px;width:80px;height:80px;background:rgba(255,255,255,.04);border-radius:50%}
+  .brand{font-size:28px;font-weight:700;color:#fff;letter-spacing:3px}
+  .tagline{color:rgba(255,255,255,.7);font-size:14px;margin-top:8px}
+  .thank-you{margin-top:20px;font-size:17px;color:#fff;font-weight:500;line-height:1.5}
+  .body{padding:28px}
+  .intro{font-size:15px;color:#555;line-height:1.6;margin-bottom:24px}
+  .section-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:#1a3a6e;margin-bottom:16px}
+  .issue{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid #f0f0f0;animation:fadeIn .4s ease-out backwards}
+  .issue:nth-child(2){animation-delay:.1s}.issue:nth-child(3){animation-delay:.2s}.issue:nth-child(4){animation-delay:.3s}
+  .issue:last-child{border-bottom:none}
+  @keyframes fadeIn{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:translateX(0)}}
+  .issue-num{width:28px;height:28px;background:#eef3fb;color:#1a3a6e;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0}
+  .issue-text{font-size:15px;color:#333;line-height:1.4;padding-top:3px}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,#ddd,transparent);margin:28px 0}
+  .contact-box{background:#f7f9fc;border-radius:16px;padding:24px;text-align:center}
+  .contact-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:#1a3a6e;margin-bottom:20px}
+  .contact-item{display:flex;align-items:center;gap:12px;padding:12px 16px;background:#fff;border-radius:12px;margin-bottom:10px;text-decoration:none;color:#1a1a2e;transition:transform .15s,box-shadow .15s;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+  .contact-item:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.08)}
+  .contact-item:active{transform:scale(.98)}
+  .contact-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+  .icon-phone{background:#e8f5e9}.icon-whatsapp{background:#e8f5e9}.icon-email{background:#e3f2fd}
+  .contact-info{text-align:left}
+  .contact-info .label{font-size:11px;color:#999;text-transform:uppercase;letter-spacing:.5px}
+  .contact-info .value{font-size:15px;font-weight:600;color:#1a1a2e;margin-top:2px}
+  .fast-tip{display:flex;align-items:center;gap:8px;margin-top:16px;padding:10px 14px;background:linear-gradient(135deg,#e8f5e9,#f1f8e9);border-radius:10px;font-size:13px;color:#2e7d32;font-weight:600}
+  .footer{padding:20px 28px 28px;text-align:center}
+  .review-note{font-size:13px;color:#888;line-height:1.6;padding:16px;background:#fffbf0;border-radius:12px;border:1px solid #ffeeba}
+  .review-note strong{color:#e67e22}
+  .footer-brand{margin-top:20px;font-size:11px;color:#ccc;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <div class="brand">HOPETOOL</div>
+    <div class="tagline">Electric Air Duster</div>
+    <div class="thank-you">Thank you for choosing us! &#127881;</div>
+  </div>
+  <div class="body">
+    <p class="intro">We hope you love your new Hopetool. If you run into any of the following issues, please contact us right away &#8212; we&#8217;ll take care of it.</p>
+    <div class="section-label">Common Issues We Can Help With</div>
+    <div class="issue"><div class="issue-num">1</div><div class="issue-text">Not charging or won&#8217;t turn on</div></div>
+    <div class="issue"><div class="issue-num">2</div><div class="issue-text">Weak airflow or not blowing strong enough</div></div>
+    <div class="issue"><div class="issue-num">3</div><div class="issue-text">Overheating or unusual noise during use</div></div>
+    <div class="issue"><div class="issue-num">4</div><div class="issue-text">Any other questions or concerns</div></div>
+    <div class="divider"></div>
+    <div class="contact-box">
+      <div class="contact-label">Contact Us</div>
+      <a class="contact-item" href="tel:+12138658734">
+        <div class="contact-icon icon-phone">&#128222;</div>
+        <div class="contact-info"><div class="label">Phone</div><div class="value">+1 (213) 865-8734</div></div>
+      </a>
+      <a class="contact-item" href="https://wa.me/12138658734" target="_blank">
+        <div class="contact-icon icon-whatsapp">&#128172;</div>
+        <div class="contact-info"><div class="label">WhatsApp (same number)</div><div class="value">Tap to chat with us</div></div>
+      </a>
+      <a class="contact-item" id="emailLink">
+        <div class="contact-icon icon-email">&#9993;&#65039;</div>
+        <div class="contact-info"><div class="label">Email</div><div class="value" id="emailValue"></div></div>
+      </a>
+      <div class="fast-tip">&#9989; Calling us = fastest way to solve your problem!</div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="review-note">&#128155; Please <strong>contact us before leaving a review</strong> &#8212; we want to make it right for you!</div>
+    <div class="footer-brand">HOPETOOL</div>
+  </div>
+</div>
+<script>
+(function(){var u='hopetool808';var d='gmail.com';var e=u+'@'+d;document.getElementById('emailValue').textContent=e;document.getElementById('emailLink').href='mail'+'to:'+e;})();
+</script>
+</body>
+</html>
